@@ -1,6 +1,9 @@
 html,
 body {
   font-family: "raleway";
+  width: fit-content;
+  max-width: 1850px;
+  margin: auto;
 }
 
 #bloc_page {
@@ -25,6 +28,15 @@ header {
   margin-top: 20px;
   margin-right: 60px;
 }
+
+#liens_mobiles {
+  margin-right: 60px;
+}
+
+#lien_hebergements {
+  margin-right: 60px;
+}
+
 #logo {
   display: flex;
   flex-direction: row;
@@ -135,6 +147,7 @@ input {
   width: 32px;
   height: 32px;
   margin-right: 10px;
+  font-size: bold;
 }
 #eco,
 #famille,
@@ -143,7 +156,8 @@ input {
   border: 2px solid #f2f2f2;
   border-radius: 30px;
   height: 38px;
-  margin-right: 20px;
+  width: auto;
+  margin-right: 40px;
 }
 #billet,
 #enfant,
@@ -198,7 +212,7 @@ input {
   flex: 2;
   height: auto;
   width: 65%;
-  margin-right: 20px;
+  margin-right: 60px;
   background-color: #f2f2f2;
   border: 2px solid #f2f2f2;
   border-radius: 10px;
@@ -240,7 +254,6 @@ input {
 
 .alignement {
   display: flex;
-  flex-direction: row;
   background-color: white;
   color: black;
   width: 500px;
@@ -268,9 +281,14 @@ input {
   height: auto;
   width: 35%;
   border-radius: 10px;
-  margin-right: 60px;
+  margin-right: 48px;
   text-decoration: none;
   color: black;
+}
+
+.enbas {
+  display: flex;
+  flex-direction: column;
 }
 
 .pop2 {
@@ -295,6 +313,10 @@ input {
   box-shadow: 2px 2px 2px rgb(182, 182, 182);
 }
 
+.textalign {
+  padding-left: 10px;
+}
+
 h4 {
   text-decoration: none;
 }
@@ -312,12 +334,28 @@ a {
 
 #placement {
   display: flex;
-  margin-left: 35px;
+  margin-left: 20px;
+  margin-top: -5%;
+  margin-bottom: -3%;
+}
+
+.bas {
+  margin-top: 80px;
+  padding-top: 12px;
+}
+
+.bas2 {
+  margin-left: 15px;
+}
+
+.droite {
+  padding-left: 15px;
+  margin-bottom: 2px;
 }
 
 #icone {
   padding-top: 30px;
-  padding-left: 300px;
+  padding-left: 240px;
 }
 
 /* Activités à Marseille */
@@ -407,4 +445,56 @@ ul {
   text-decoration: none;
   background-color: #f2f2f2;
   color: black;
+}
+
+/* responsive */
+
+@media screen and (max-width: 1280px) {
+  body {
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+  .forme {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .populaire {
+    width: auto;
+    margin-right: 2px;
+    margin-bottom: 5px;
+    border-radius: 0%;
+  }
+
+  #placement {
+    display: flex;
+    margin-left: 2px;
+  }
+
+  #icone {
+    margin-right: 3px;
+  }
+
+  .alignement {
+    width: auto;
+    margin-left: 2px;
+    margin-right: 4px;
+  }
+
+  #marseille {
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    margin-right: 2px;
+    background-color: white;
+    border: none;
+    border-radius: 0%;
+  }
+
+  .colone {
+    background-color: none;
+  }
 }
